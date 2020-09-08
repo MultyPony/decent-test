@@ -1,46 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Company Name</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="img/logo.svg" alt="Company Name Logo" width="137" height="96">
-      <nav class="container">
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link link" href="#">About Us</a></li>
-          <li class="menu__item"><a class="menu__link link" href="#">Shop</a></li>
-          <li class="menu__item"><a class="menu__link link" href="#">Contact Us</a></li>
-          <li class="menu__item"><a class="menu__link link" href="#">My Account</a></li>
-        </ul>
-      </nav>
+      <div class="header__wrap">
+        <img class="logo img" src="img/logo.svg" alt="Company Name Logo" width="137" height="96">
+        <nav class="container">
+          <ul class="menu list">
+            <li class="menu__item"><a class="menu__link link" href="#">About Us</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#">Shop</a></li>
+            <li class="menu__item fill"></li>
+            <li class="menu__item"><a class="menu__link link" href="#">Contact Us</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#">My Account</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <div class="container">
-        <article class="post">
-          <img class="post__img" src="img/post_img.jpg" alt="Post image" width="360" height="250">
-          <span class="post__label">Yellow</span>
-          <h3 class="post__title">Demo Post Title</h3>
-          <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a class="post__link" href="#">Read More</a>
-        </article>
+        <div class="row">
+          <div class="col-md">
+            <article class="post">
+              <img class="post__img img" src="img/post_img.jpg" alt="Post image" width="360" height="250">
+              <span class="post__label">Yellow</span>
+              <h3 class="post__title">Demo Post Title</h3>
+              <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="post__link" href="#">Read More</a>
+            </article>
+          </div>
 
-        <article class="post">
-          <img class="post__img" src="img/post_img.jpg" alt="Post image" width="360" height="250">
-          <span class="post__label">Red</span>
-          <h3 class="post__title">Demo Post Title2</h3>
-          <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a class="post__link" href="#">Read More</a>
-        </article>
-        
-        <article class="post">
-          <img class="post__img" src="img/post_img.jpg" alt="Post image" width="360" height="250">
-          <span class="post__label">Yellow</span>
-          <h3 class="post__title">Demo Post Title3</h3>
-          <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a class="post__link" href="#">Read More</a>
-        </article>
+          <div class="col-md">
+            <article class="post">
+              <img class="post__img img" src="img/post_img.jpg" alt="Post image" width="360" height="250">
+              <span class="post__label">Red</span>
+              <h3 class="post__title">Demo Post Title2</h3>
+              <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="post__link" href="#">Read More</a>
+            </article>
+          </div>
+
+          <div class="col-md">
+            <article class="post">
+              <img class="post__img img" src="img/post_img.jpg" alt="Post image" width="360" height="250">
+              <span class="post__label">Yellow</span>
+              <h3 class="post__title">Demo Post Title3</h3>
+              <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="post__link" href="#">Read More</a>
+            </article>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
