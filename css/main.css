@@ -6,6 +6,9 @@
 
 body {
   margin: 0;
+
+  font-family: "Nunito";
+  font-weight: bold;
 }
 
 .list {
@@ -27,8 +30,6 @@ body {
 
 .header {
   margin-bottom: 2em;
-
-  font-family: "Nunito";
 
   background: #F3F3F3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -52,13 +53,102 @@ body {
 }
 
 .menu__link {
-  font-weight: bold;
   font-size: 20px;
 }
 
+.post {
+  max-width: 360px;
+  margin-bottom: 2em;
+}
+
+.post__wrap {
+  position: relative;
+}
+
+.post__label {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 20px;
+
+  font-size: 10px;
+
+  background-color: #E6FE53;
+  border-radius: 40px;
+}
+
+.post__label_color_red {
+  background-color: #FE5353;
+}
+
+.post__title {
+  margin-top: 12px;
+  margin-bottom: 9px;
+
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.post__desc {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #717171;
+}
+
+.post__link {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #F58220;
+}
+
+.post__link::after {
+  content: url('../img/arrow.svg');
+  position: relative;
+  top: 1px;
+  margin-left: 6px;
+}
+
 .footer {
+  display: flex;
+  align-items: center;
+  height: 200px;
+
   background: #F3F3F3;
 }
+
+.socials__link {
+  display: flex;
+  align-items: center;
+
+  color: #727272;
+}
+
+.socials__link::before {
+  margin-right: 9px;
+}
+
+.facebook::before {
+  content: url('../img/facebook-icon.svg');
+}
+
+.twitter::before {
+  content: url('../img/twitter-icon.svg');
+}
+
+.linkedin::before {
+  content: url('../img/linkedin-icon.svg');
+}
+
 
 @media (min-width: 576px) {
   .header__wrap {
@@ -114,6 +204,14 @@ body {
 
   .fill {
     flex-grow: 1;
+  }
+
+  .post {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    margin-top: 77px;
   }
 
 }
